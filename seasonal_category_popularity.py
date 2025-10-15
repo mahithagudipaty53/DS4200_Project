@@ -18,11 +18,11 @@ chart = alt.Chart(df).mark_bar().encode(
     height=400
 )
 
-# Save chart as HTML in current directory
+# Save chart as HTML
 output_file = 'seasonal_category_popularity.html'
 chart.save(output_file)
 print(f"Saved chart to: {os.path.abspath(output_file)}")
 
-# Open the chart in your default web browser
+# Open the chart in web browser
 webbrowser.open('file://' + os.path.abspath(output_file))
 
